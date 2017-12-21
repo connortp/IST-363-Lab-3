@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,700|Poppins:400,700');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.header{
+  height: 100px;
+  background-color: #02579A;
+
+}
+.twelve-columns{
+  display: flex;
+}
+
+.twelve-columns h1{
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  padding:20px;
+  margin-right:110px;
+}
+
+.navigation{
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  height:100px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navigation a{
+  margin: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:600px;
+  background:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/110808/36601901962_dde134d539_k.jpg');
+  background-size:cover;
+}
+
+.hero h2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 8vh;
+}
+
+.hero a{
+  display: flex;
+  background-color: #02579A;
+  color: #fff;
+  text-decoration: none;
+  width: 180px;
+  height: 40px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-top: 48px;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 3px;
+  border-color: #02579A;
+}
+
+/* ABOUT US SECTIOn */
+
+.about .row{
+  text-align:center;
+}
+.about{
+  background-color: #e2e2e2;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.about h2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 24px;
+}
+.row{
+  justify-content: center;
+}
+
+/* WHAT WE DO SECTION */
+
+.what-we-do h2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.what-we-do h3{
+  color: #01579b;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.fa{
+  color: #01579b;
+  font-size: 35px;
+}
+
+.what-we-do .row{
+  text-align: center;
+}
+
+.what-we-do{
+  background-color: #fff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.what-we-do-item i{
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+/* WORK SECTION */
+
+.work{
+  background-color: #01579B;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.work h2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.work-item h3{
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* TESTAMONIAL SECTION */
+
+.testimonials{
+  background-color: #e2e2e2;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.testimonials h2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+  color: #000;
+}
+
+.testimonials-item{
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.testimonials-text{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  font-size: 15px;
+}
+
+/* FOOTER SECTION */
+
+.footer{
+  background-color: #424242;
+  color: #fff;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MEDIA QUERY SECTION */
+
+@media screen and (max-width: 786px){
+  article, aside {float: none;}
+
+  .header .twelve-columns{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header h1{
+    text-align: center;
+    margin-right: 10px;
+  }
+
+  .header{
+    height: auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    flex-direction: column;
+  }
+
+  .navigation{
+    margin: 0px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .what-we-do{
+    flex-wrap: wrap;
+  }
+
+  .what-we-do-item{
+    flex-wrap: wrap;
+    padding: 12px;
+    flex-basis: 50%
+  }
+
+  .work-item{
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 48px;
+  }
+
+  .testimonials-item{
+    justify-content: flex-start;
+  }
+
+  .testimonials-text{
+    align-items: flex-start;
+  }
+
+  .work .row{
+    flex-wrap: wrap;
+  }
+
+  .work-item{
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 540px){
+  article, aside {float: none;}
+
+  .navigation{
+    flex-wrap: wrap;
+    flex-basis: 33%;
+    justify-content: center;
+  }
+
+  .hero h2{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .what-we-do-item{
+    flex-basis: 100%;
+  }
+  .testimonials .row{
+    display: flex;
+  }
+
+  .testimonials-item{
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+
+  .testimonials-item .testimonials-item-reversed{
+    flex-direction: column-reverse;
+  }
+
+  .testimonials-text{
+    order: 2;
+  }
+
+  .testimonials-image{
+    order: 1;
+  }
+}
